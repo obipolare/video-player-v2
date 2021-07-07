@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Video Player App v2</title>
+  </head>
+  <body class="text-white mx-auto max-w-5xl">
+      <section class="m-4 flex flex-col justify-between ">
+        <label for="song" class="my-1 text-3xl font-semibold">Escucha esta canción o ingresa una canción que te mole!, vos elegis!</label>
+        <input type="file" class="my-1" id="input">
+        <div id="load-bar"class="load-bar my-1 w-full sm:w-96"></div>
+      </section>
+    <div class="video m-4">
+      <div class="video-player">
+        <header class="video-player__title" id="video-player__title" >
+            
+        </header>
+        <div class="video-player__controls">
+          <button class="button" id="backward"></button>
+          <button class="button" id="play"></button>
+          <button class="button" id="pause"></button>
+          <button class="button" id="forward"></button>
+          <!-- <button class="button" id="xD">xD</button> -->
+        </div>
+        <div class="player-progress">
+            <input type="range" name="song-bar" class="song-bar" id="input-song" min="0" step=1 >
+        </div>
+      </div>
+      <video id="video" autoplay src="./videos/Raparapa.mp4" title="A Song"></video>
+      <!-- <video src="https://youtu.be/t4jkOtSBQaU"></video> -->
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
