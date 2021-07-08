@@ -23,14 +23,14 @@
             
         </header>
         <div class="video-player__controls">
-          <button class="button" id="backward"></button>
-          <button class="button" id="play"></button>
-          <button class="button" id="pause" hidden></button>
-          <button class="button" id="forward"></button>
+          <button class="button" id="backward" area-label="Retroceder 10 segundos"></button>
+          <button class="button" id="play" area-label="Reproducir el video"></button>
+          <button class="button" id="pause" hidden area-label="Pausar el video"></button>
+          <button class="button" id="forward" area-label="Adelantar 10 segundos"></button>
           <!-- <button class="button" id="xD">xD</button> -->
         </div>
         <div class="player-progress">
-            <input type="range" name="song-bar" class="song-bar" id="input-song" min="0" step=1 >
+            <input type="range" name="song-bar" class="song-bar" id="input-song" min="0" step=1 value="0">
         </div>
       </div>
       <video id="video" autoplay src="./videos/Raparapa.mp4" title="A Song"></video>
